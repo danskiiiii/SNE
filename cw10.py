@@ -23,13 +23,6 @@ def _log(N):
             else:
                 return gcd(N, a ** int(r/2) - 1)
 
-N = [12, 91, 143, 1859, 1737, 13843]
-for n in N:
+numbers = [12, 91, 143, 1859, 1737, 13843, 988027]
+for n in numbers:
     print('n =', n, ':', _log(n))
-flag = False
-while flag == False:
-    try:
-        print('n = 988027: ', _log(988027))
-        flag = True
-    except OverflowError:
-        pass
